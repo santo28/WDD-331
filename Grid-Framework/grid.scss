@@ -50,3 +50,7 @@ $icon-size: $card-width / 5;
 .rotate {
     transform: rotate(180deg);
 }
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
