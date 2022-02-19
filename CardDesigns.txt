@@ -1,0 +1,84 @@
+HTML 
+https://codepen.io/Msantos17/pen/KKyvJpv
+
+<!--card 1 -->
+
+ <svg width="400" height="600"> 
+    <defs>
+      <pattern id="pattern1" patternUnits="userSpaceOnUse" x="1" y="20" width="35" height="45">
+        <rect x="5" y="15" rx="1" ry="0" class="rectangle1"/>
+     <circle cx="2" cy="4" r="35" class="circle1" /> 
+     <circle cx="25" cy="20" r="10" fill="Red" stroke="white" stroke-width="4" />
+      </pattern>
+    </defs>
+    <rect class="card1" x="45" y="10" ry="10" fill="url(#pattern1)"/>
+</svg>
+	
+
+
+ <!-- card 2 -->
+ <svg width="400" height="600"> 
+    <defs>
+      <pattern id="pattern2" patternUnits="userSpaceOnUse" x="35" y="45" width="25" height="25">
+        <rect x="5" y="5" transform="rotate(-45)" class="rectangle2"/>
+        <rect x="5" y="5" transform="rotate(45)" class="rectangle3"/>
+      <circle cx="12" cy="12" r="6" class="circle2"/>
+      </pattern>
+    </defs>
+    <rect class="card2" x="50" y="10" ry="10" fill="url(#pattern2)"/>
+</svg>
+
+SCSS: 
+
+$width: 200px;
+$height: 300px;
+$stroke: black;
+$stroke-width: 3px;
+
+.card1{
+  width: $width;
+  height: $height;
+  stroke: $stroke;
+  stroke-width: $stroke-width;
+}
+
+.rectangle1{
+  width: 50px;
+  height: 50px;
+  fill: black;
+}
+
+.circle1 {
+  fill: green;
+  stroke: white;
+  stroke-width: 5px;
+ }
+
+.card2{
+  width: $width;
+  height: $height;
+  stroke: $stroke;
+  stroke-width: $stroke-width;
+}
+
+.rectangle2{
+  fill: #A2880A;
+  width: 60px;
+  height: 60px;
+  stroke: gray;
+  stroke-width: 25px;
+}
+
+.rectangle3{
+  fill: red;
+  width: 60px;
+  height: 60px;
+  stroke: white;
+  stroke-width: 5px;
+}
+
+.circle2{
+  fill: white;
+  stroke: black;
+  stroke-width: 6px;
+}
