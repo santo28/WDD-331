@@ -12,6 +12,11 @@ $icon-size: $card-width / 5;
     padding: 0;
 }
 
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 //styles to draw a basic outline of a card
 .card {
     border: 1px solid grey;
@@ -49,8 +54,4 @@ $icon-size: $card-width / 5;
 //rotate bottom pips 180deg
 .rotate {
     transform: rotate(180deg);
-}
-.row {
-    display: flex;
-    flex-flow: row wrap;
 }
